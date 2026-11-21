@@ -1,0 +1,32 @@
+{
+  "name": "or7-06-02-academia-premium",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "typecheck": "tsc -b",
+    "test:e2e": "node scripts/e2e.mjs",
+    "images": "node scripts/fetch-images.mjs"
+  },
+  "dependencies": {
+    "lucide-react": "^1.75.0",
+    "motion": "^14.14.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "oxlint": "^1.90.0",
+    "playwright-core": "^1.65.0",
+    "sharp": "^0.35.5",
+    "typescript": "~7.0.2",
+    "vite": "^8.3.8"
+  }
+}

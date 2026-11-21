@@ -1,0 +1,102 @@
+{
+  "hero": {
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/1605296867304-46d5465a13f1"
+  },
+  "philosophy": {
+    "w": 2000,
+    "h": 3000,
+    "source": "https://unsplash.com/photos/1788004001501-08a0a3cc5cff"
+  },
+  "grip": {
+    "w": 2000,
+    "h": 2999,
+    "source": "https://unsplash.com/photos/1722925541142-5db2668ca492"
+  },
+  "m-strength": {
+    "w": 2000,
+    "h": 3000,
+    "source": "https://unsplash.com/photos/1772450014622-1c209d012c2e"
+  },
+  "m-functional": {
+    "w": 2000,
+    "h": 1125,
+    "source": "https://unsplash.com/photos/1534258936925-c58bed479fcb"
+  },
+  "m-coaching": {
+    "w": 2000,
+    "h": 1125,
+    "source": "https://unsplash.com/photos/1758875570137-8691b7c55033"
+  },
+  "m-recovery": {
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/1787089574835-366ffd17b429"
+  },
+  "m-personal": {
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/1738523686534-7055df5858d6"
+  },
+  "m-group": {
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/1517130038641-a774d04afb3c"
+  },
+  "s-floor": {
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/1778828494354-9b717d36dc99"
+  },
+  "s-functional": {
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/1632077804406-188472f1a810"
+  },
+  "s-studio": {
+    "w": 2000,
+    "h": 2667,
+    "source": "https://unsplash.com/photos/1761971975858-c487bc10daab"
+  },
+  "s-recovery": {
+    "w": 2000,
+    "h": 1250,
+    "source": "https://unsplash.com/photos/1757940661240-f2e8d2ff93bf"
+  },
+  "s-lockers": {
+    "w": 2000,
+    "h": 2667,
+    "source": "https://unsplash.com/photos/1781274326569-7120016a6c7e"
+  },
+  "story-1": {
+    "w": 2000,
+    "h": 1125,
+    "source": "https://unsplash.com/photos/1758875569256-f37c438cac65"
+  },
+  "story-2": {
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/1706029831387-fd8bc3d27d01"
+  },
+  "story-3": {
+    "w": 2000,
+    "h": 1333,
+    "source": "https://unsplash.com/photos/1700784795176-7ff886439d79"
+  },
+  "book": {
+    "w": 2000,
+    "h": 2994,
+    "source": "https://unsplash.com/photos/1709315957145-a4bad1feef28"
+  },
+  "finale": {
+    "w": 2000,
+    "h": 3000,
+    "source": "https://unsplash.com/photos/1526506118085-60ce8714f8c5"
+  },
+  "finder": {
+    "w": 2000,
+    "h": 3000,
+    "source": "https://unsplash.com/photos/1770513649465-2c60c8039806"
+  }
+}

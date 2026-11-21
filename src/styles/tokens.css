@@ -1,0 +1,144 @@
+/* ==================================================================
+ * VERTEX — tokens
+ * Paleta, tipografia, espaçamento e movimento.
+ * ================================================================== */
+
+@font-face {
+  font-family: 'Clash Display';
+  src: url('/fonts/clash-display-600.woff2') format('woff2');
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Clash Display';
+  src: url('/fonts/clash-display-500.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/satoshi-400.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/satoshi-500.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/satoshi-700.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+}
+
+/* Fallbacks métricos para reduzir deslocamento enquanto as fontes carregam */
+@font-face {
+  font-family: 'Clash Fallback';
+  src: local('Arial Narrow'), local('Arial');
+  size-adjust: 92%;
+  ascent-override: 95%;
+}
+@font-face {
+  font-family: 'Satoshi Fallback';
+  src: local('Arial');
+  size-adjust: 98%;
+}
+
+:root {
+  --font-display: 'Clash Display', 'Clash Fallback', 'Arial Narrow', sans-serif;
+  --font-ui: 'Satoshi', 'Satoshi Fallback', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  /* Escala fluida (360px → 1600px) */
+  --fs-hero: clamp(3.5rem, 0.9rem + 11.6vw, 13.5rem);
+  --fs-display: clamp(2.6rem, 1.3rem + 5.6vw, 7.6rem);
+  --fs-h3: clamp(1.6rem, 1.15rem + 1.8vw, 2.9rem);
+  --fs-statement: clamp(1.35rem, 1rem + 1.45vw, 2.35rem);
+  --fs-lead: clamp(1.05rem, 0.98rem + 0.3vw, 1.25rem);
+  --fs-body: 1rem;
+  --fs-small: 0.875rem;
+  --fs-label: 0.75rem;
+
+  --gutter: clamp(16px, 4.2vw, 64px);
+  --shell: 1440px;
+  --section-y: clamp(96px, 11vw, 184px);
+  --radius: 4px;
+  --radius-lg: 10px;
+
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur: 0.5s;
+
+  /* Paleta base (Glacier-free, identidade própria do projeto) */
+  --c-ink: #0b0d0f;
+  --c-ink-surface: #15191c;
+  --c-ink-elevated: #20262a;
+  --c-ink-border: #343a3d;
+  --c-paper: #f3f4ef;
+  --c-paper-surface: #ffffff;
+  --c-paper-elevated: #e7e9e2;
+  --c-paper-border: #d3d6ce;
+  --c-text-light: #f4f4f0;
+  --c-text-light-2: #a6adb0;
+  --c-text-dark: #171a1d;
+  --c-text-dark-2: #4d5458;
+  --c-lime: #d7ff45;
+  --c-olive: #3e4b00;
+  --c-danger-dark: #ff8a7a;
+  --c-danger-light: #b42318;
+}
+
+/* ---- Tom escuro ---------------------------------------------------- */
+:root,
+[data-theme='dark'],
+.tone-dark,
+[data-theme='light'] .inverse {
+  --bg: var(--c-ink);
+  --surface: var(--c-ink-surface);
+  --surface-2: var(--c-ink-elevated);
+  --border: var(--c-ink-border);
+  --text: var(--c-text-light);
+  --text-2: var(--c-text-light-2);
+  --accent: var(--c-lime);
+  --accent-ink: var(--c-lime);
+  --on-accent: var(--c-ink);
+  --focus: var(--c-lime);
+  --danger: var(--c-danger-dark);
+  --shade: 11 13 15;
+  --hairline: rgb(244 244 240 / 0.12);
+}
+
+/* ---- Tom claro ----------------------------------------------------- */
+[data-theme='light'],
+.tone-light,
+[data-theme='dark'] .inverse {
+  --bg: var(--c-paper);
+  --surface: var(--c-paper-surface);
+  --surface-2: var(--c-paper-elevated);
+  --border: var(--c-paper-border);
+  --text: var(--c-text-dark);
+  --text-2: var(--c-text-dark-2);
+  --accent: var(--c-lime);
+  --accent-ink: var(--c-olive);
+  --on-accent: var(--c-ink);
+  --focus: var(--c-text-dark);
+  --danger: var(--c-danger-light);
+  --shade: 23 26 29;
+  --hairline: rgb(23 26 29 / 0.12);
+}
+
+/* Seções sempre escuras (fotografia) mantêm o tom escuro nos dois modos */
+[data-theme='light'] .tone-dark {
+  --bg: var(--c-ink);
+  --surface: var(--c-ink-surface);
+  --surface-2: var(--c-ink-elevated);
+  --border: var(--c-ink-border);
+  --text: var(--c-text-light);
+  --text-2: var(--c-text-light-2);
+  --accent-ink: var(--c-lime);
+  --focus: var(--c-lime);
+  --danger: var(--c-danger-dark);
+  --hairline: rgb(244 244 240 / 0.12);
+}
